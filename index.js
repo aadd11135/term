@@ -11,7 +11,7 @@ var app = express();
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
-mongoose.connect(process.env.MONGO_DB);
+mongoose.connect('mongodb+srv://aadd11135:qkrtkdgus123@cluster0-haq5w.mongodb.net/test?retryWrites=true&w=majority');
 var db = mongoose.connection;
 db.once("open", function(){
   console.log("DB connected");
